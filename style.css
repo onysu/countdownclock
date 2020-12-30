@@ -7,7 +7,7 @@ body {
 }
 .head {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
   transform: translateY(-50%);
   text-align: center;
@@ -61,11 +61,9 @@ h3{
 .count_d h2{
   margin-top: 10px;
 }
-.image img{
-  position: absolute;
-  top: 70px;
-  margin: 0 40%;
-  width: 70px;
-  height: 70px;
+img{
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  margin-bottom: 20px;
 }
