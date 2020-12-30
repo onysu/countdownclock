@@ -61,3 +61,11 @@ h3{
 .count_d h2{
   margin-top: 10px;
 }
+.image img{
+  position: absolute;
+  top: 70px;
+  margin: 0 40%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
