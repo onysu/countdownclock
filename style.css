@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Orbitron', sans-serif;
-  background: #262626;
+  background: #000000;
 }
 .head {
   position: absolute;
@@ -53,9 +53,9 @@ h3{
 .count_d h2{
   display: block;
   text-align: center;
-  font-size: 10px;
+  font-size: 16px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #dddddd;
   margin-bottom: 0;
 }
 .count_d h2{
