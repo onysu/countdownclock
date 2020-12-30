@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 body {
   margin: 0;
   padding: 0;
   /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Orbitron', sans-serif;
   background: #262626;
 }
 .head {
@@ -10,6 +12,7 @@ body {
   width: 100%;
   transform: translateY(-50%);
   text-align: center;
+  padding: 10px;
 }
 h1{
   text-align: center;
@@ -31,11 +34,11 @@ h3{
   position: relative;
   width: 100px;
   /* padding: 20px; */
-  margin: 0 10px;
+  margin: 0 3px;
   background: #262626;
   color: #ffffff;
   border: 1px solid #000000;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   overflow: hidden;
 }
 .count_d:before{
@@ -50,7 +53,7 @@ h3{
 .count_d span{
   display: block;
   text-align: center;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 800;
 }
 .count_d h2{
@@ -62,5 +65,5 @@ h3{
   color: #ffffff;
 }
 .count_d h2{
-  margin-top: 11px;
+  margin-top: 5px;
 }
