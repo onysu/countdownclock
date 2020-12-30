@@ -25,6 +25,7 @@ h3{
   display: flex;
   width: 100%;
   margin: 0 auto;
+  justify-content: center;
 }
 .count_d {
   position: relative;
