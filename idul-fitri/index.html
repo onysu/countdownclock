@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/ony.png"
+    type="image/x-icon">
+  <title>Hello, world!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .countdownContainer {
+      width: 100%;
+      display: grid;
+      place-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+      line-height: 1;
+    }
+
+    .judul {
+      font-size: 8vw;
+      color: gold;
+    }
+
+    .judul span {
+      font-size: 8vw;
+      color: wheat;
+    }
+
+    .info {
+      font-size: 13vw;
+      color: ghostwhite;
+    }
+
+    .text {
+      font-size: 4vw;
+      color: wheat;
+    }
+  </style>
+</head>
+
+<body class="bg-dark text-white">
+  <div class="container">
+    <table class="countdownContainer">
+      <tr class="judul">
+        <th colspan="4" style="padding-bottom: 15px;">Idul Fitri 2021 <br> <span
+            style="font-weight: 200;">Countdown</span></th>
+      </tr>
+      <tr class="info">
+        <td id="days" style="padding: 0 10px; border-right: 1px solid tomato;"></td>
+        <td id="hours" style="padding: 0 10px; border-right: 1px solid tomato;"></td>
+        <td id="minutes" style="padding: 0 10px; border-right: 1px solid tomato;">
+        </td>
+        <td id="seconds" style="padding: 0 10px;">
+        </td>
+      </tr>
+      <tr class="text">
+        <td style="padding: 0 10px; border-right: 1px solid tomato;">Hari</td>
+        <td style="padding: 0 10px; border-right: 1px solid tomato;">Jam</td>
+        <td style="padding: 0 10px; border-right: 1px solid tomato;">Menit</td>
+        <td style="padding: 0 10px;">Detik</td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript">
+    function countdown() {
+      var now = new Date();
+      var eventDate = new Date(2021, 05, 12);
+
+      var currentTiime = now.getTime();
+      var eventTime = eventDate.getTime();
+
+      var remTime = eventTime - currentTiime;
+
+      var s = Math.floor(remTime / 1000);
+      var m = Math.floor(s / 60);
+      var h = Math.floor(m / 60);
+      var d = Math.floor(h / 24);
+
+      h %= 24;
+      m %= 60;
+      s %= 60;
+
+      h = (h < 10) ? "0" + h : h;
+      m = (m < 10) ? "0" + m : m;
+      s = (s < 10) ? "0" + s : s;
+
+      document.getElementById("days").textContent = d;
+      document.getElementById("days").innerText = d;
+
+      document.getElementById("hours").textContent = h;
+      document.getElementById("minutes").textContent = m;
+      document.getElementById("seconds").textContent = s;
+
+      setTimeout(countdown, 1000);
+    }
+
+    countdown();
+  </script>
+</body>
+
+</html>
